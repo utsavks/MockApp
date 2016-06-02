@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title"
+        android:id="@+id/tvFavTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tvFavStar"
+        android:layout_alignEnd="@+id/tvFavStar"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0.0"
+        android:id="@+id/tvFavRating"
+        android:layout_below="@+id/tvFavTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff8844" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fvaRatingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="0.0"
+        android:stepSize="0.5"
+        android:layout_below="@+id/tvFavTitle"
+        android:layout_toRightOf="@+id/tvFavRating"
+        android:layout_toEndOf="@+id/tvFavRating" />
+
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/favButton2"
+        tools:ignore="ContentDescription"
+        android:checked="true"
+        android:background="@drawable/fav_button_design"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:layout_below="@+id/tvFavAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0 star hotel"
+        android:id="@+id/tvFavStar"
+        android:layout_below="@+id/tvFavTitle"
+        android:layout_toRightOf="@+id/fvaRatingBar"
+        android:layout_toEndOf="@+id/fvaRatingBar"
+        android:layout_marginLeft="2dp"
+        android:textColor="#ff8844" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address"
+        android:id="@+id/tvFavAddress"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvFavRating"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/tvFavPrice"
+        android:layout_toStartOf="@+id/tvFavPrice" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivFav"
+        android:background="@drawable/default_image"
+        android:layout_below="@+id/tvFavTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/tvFavPrice"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tvFavAddress"
+        android:layout_toLeftOf="@+id/ivFav"
+        android:layout_toStartOf="@+id/ivFav" />
+</RelativeLayout>

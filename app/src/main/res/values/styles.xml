@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/common_action_bar_splitter</item>
+    </style>
+
+    <style name="Theme.AppTheme.DayNight" parent="Theme.AppCompat.DayNight" />
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

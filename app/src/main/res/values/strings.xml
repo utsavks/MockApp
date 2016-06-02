@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MockApp</string>
+    <string name="result_bar_name">Your Magical Results</string>
+    <string name="help_text">
+        Hello Traveller,"\n"How can we help you today?</string>
+    <string name="btnGo_txt">Go!</string>
+    <string name="et_hint">e.g. Nice comfy hotels in Bangkok</string>
+    <string name="action_favorite">Favorites</string>
+    <string name="your_favorite_bunkers">Your Favorite Bunkers</string>
+    <string name="prime_color">#f05f71</string>
+    <string name="no_internet_warn">No results(Internet may not be available)</string>
+    <string name="cost_n_a">Cost:N/A</string>
+</resources>
